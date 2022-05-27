@@ -102,7 +102,7 @@ function makeFrontierVariable(strs: string[]): string {
 }
 
 function makeFrontierKey(strs: string[]): string {
-  return strs.join("_");
+  return strs.map((s) => s.toLowerCase()).join("_");
 }
 
 // this method is called when your extension is deactivated
